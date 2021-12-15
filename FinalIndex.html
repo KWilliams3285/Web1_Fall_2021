@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<!-- CSS Will go under Here in STYLE Tags -->
+<style>
+        /* CSS Variables for Color */
+        :root {
+            --mainbg:white;
+            --lightbg: #b6aeae;
+            --headercolor: white;
+            --navcolor:#001d3d;
+            --lighttext: #ffffff;
+            --darktext: black;
+            --footercolor: #001d3d;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+        padding: 1vh;
+        text-align: center;
+        }
+        header h1 {
+        color: var(--darktext);
+        width: 60%;
+        margin: 1vh auto;
+        padding: 1vh;
+        }
+        nav {
+        background: var(--navcolor);
+        color: var(--lighttext);
+        padding: 2vh;
+        }
+        footer {
+        background: var(--navcolor);
+        color: var(--lighttext);
+        padding: 2vh;
+        min-height: 10vh;
+        }
+        .container {
+        background: var(--lightbg);
+        padding: 1vh;
+        min-height: 60vh;
+        width: 80%;
+        margin: auto;
+        }
+        /* New CSS Goes Under Here */
+        .jumbotron{
+          height: 50vh;
+          position:relative;
+          overflow:hidden;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+        }
+        .jumbotron img{
+          width:100%;
+          display:block;
+          filter:brightness(.7) blur(3px);
+        }
+        .jumbotron-inner{
+          position:absolute;
+          text-align:center;
+          background:black;
+          width:60%;
+          height:60%;
+          color: var(--lighttext);
+          border-radius: 16px;
+        }
+        .jumbotron-inner >* {
+          padding: 1vh;
+          margin: 1vh;
+        }
+        .jumbotron-inner h1 {
+          font-size:3rem;
+        }
+        .jumbotron-inner p{
+          font-size:1.5rem;
+          line-height:2.15rem;
+        }
+        /*Container flex setup for row */
+       
+        .container{
+          display:flex;
+          flex-flow:column nowrap;
+        }
+        .flex-container{
+          display:flex;
+          flex-flow:row wrap;
+          /*since these itemss are in the container */
+          width:100%;
+          justify-content:center;
+          align-items: center;
+          background:pink;
+          padding: 1vh;
+        }
+        .section-header{
+          width:100%;
+          padding:2vh;
+          font-size:2rem;
+          background:var(--lightbg);
+          color:var(--darktext);
+          border-bottom:1px black solid;
+          margin: 1vh auto;
+        }
+        .flex-item{
+          flex-basis:30%;
+          min-width:200px;
+          padding:1vh;
+          margin:auto;
+          text-align:center;
+        }
+        .flex-item a{
+          display:block;
+          text-decoration:none;
+          color:var(--darktext);
+          border-radius:8px;
+          overflow:hidden;
+        }
+        .flex-item a:hover {
+          box-shadow:10px 10px 5px 2px rgba(67,91,92,0.47);
+        }
+        .item-image{
+          width:100%;
+          height:32vh;
+          background:grey;
+          overflow:hidden;
+        }
+        .item-image img {
+          display:block;
+          height:100%;
+          margin:auto;
+        }
+        .item-heading{
+          background:var(--navcolor);
+          color:var(--lighttext);
+          font-size:1.5rem;
+          padding: 1vh;
+        }
+        .item-text {
+          width:100%;
+          min-height:15vh;
+          background:var(--lightbg);
+          padding: 1.25vh;
+        }
+
+
+</style>
+
+    <!-- Link tags go here for external css -->
+
+
+    <!-- Responsive meta tag for viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<title>Web 1 Final Index - LASTNAME</title>
+
+</head>
+<body>
+<header>
+
+</header>
+<nav>
+Placeholder
+</nav>
+    <div class="jumbotron">
+        <img src="https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg" alt="#">
+        <div class="jumbotron-inner">
+            <h1>Web Design Homepage</h1>
+            <p>
+                First Name Last Name<br>
+                Web 1, 1st Hour<br>
+                DATE
+            </p>
+        </div>
+    </div>
+<div class="container">
+<!-- Put assignment specific code here -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Page Skeletons</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="skeleton.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://media.istockphoto.com/vectors/human-skeleton-standing-with-vintage-lantern-dead-man-cartoon-vector-vector-id1154723778?k=20&m=1154723778&s=170667a&w=0&h=9mlRQa9BouL4pOD6e5jfu_LyaDixhMqgmxo_kc01E0k=" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.1
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="newskeleton2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://media.istockphoto.com/vectors/human-skeleton-with-iroquois-smoking-pipe-funny-dead-man-cartoon-vector-id1154723858?k=20&m=1154723858&s=170667a&w=0&h=XivjwB5RDj0tyilCop0IKXYvA5Qjs8LV5c1VZ1CjowI=" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.2
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://media.istockphoto.com/vectors/human-skeleton-wearing-baseball-cap-walking-with-shopping-bags-funny-vector-id1154724016?k=20&m=1154724016&s=612x612&w=0&h=oy2C4pG1oadZZU3oRM5zCNcd6D5vDGd2dg8M1vIlPUo=" alt="#">
+                </div>
+                <div class="item-heading">
+                    Final Skeleton
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+           
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Basic HTML/CSS Assignments</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Favorite Movie v.2
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    HtML Favorite Food v.3
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    HTML Streaming Assignment
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Updated Shopping List
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+           
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">CSS Flexbox</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Streaming v.3
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox NFL/Sports Assignment
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox Music
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+           
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Full Websites</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.themgroup.co.uk/wp-content/uploads/2020/12/landscape-placeholder.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    First Full Website
+                </div>
+                <div class="item-text">
+                    Item descrition
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+
+           
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+
+
+
+
+
+</div><!-- End of the container -->
+<footer>
+Made in FHS Web Design
+</footer>
+
+
+    <!-- JavaScript will go under here-->
+
+
+
+
+
+
+
+   
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>
